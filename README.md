@@ -13,7 +13,7 @@ The project is structured into the following main components:
 
 ## Data Collection and Cleaning
 
-The [data](https://github.com/etron17/GAStimator/tree/master/data) used for this project was collected from multiple sources, including government websites and online open data sources. The data was cleaned and processed to ensure its accuracy and consistency. The cleaning process involved removing any missing or duplicate data and standardizing the data format.   
+The [data](https://github.com/etron17/file_transformation_etl-pipeline/tree/main/data) used for this project was collected from multiple sources, including government websites and online open data sources. The data was cleaned and processed to ensure its accuracy and consistency. The cleaning process involved removing any missing or duplicate data and standardizing the data format.   
   - [Cities in Canada with Lat Long](https://simplemaps.com/data/canada-cities)
   - [Crude Oil WTI](https://ca.investing.com/commodities/crude-oil-historical-data)
   - [Canada historical gas price](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000101&pickMembers%5B0%5D=2.2&cubeTimeFrame.startMonth=01&cubeTimeFrame.startYear=2018&cubeTimeFrame.endMonth=12&cubeTimeFrame.endYear=2022&referencePeriods=20180101%2C20221201)
@@ -78,11 +78,11 @@ Triggering pyspark – Tranforming CSV to parque
 
 ***5. Create emr_job_submission.py on EC2 Docker***
 
-***6. Edit [emr_job_submission.py](https://github.com/etron17/GAStimator/blob/master/dags/emr_job_submission.py)***
+***6. Edit [emr_job_submission.py](https://github.com/etron17/file_transformation_etl-pipeline/blob/main/dags/emr_job_submission.py)***
 
 ***7. Trigger Lambda***
 
-[lambda.py](https://github.com/etron17/GAStimator/blob/master/lambda/lambda.py)
+[lambda.py](https://github.com/etron17/file_transformation_etl-pipeline/blob/main/lambda/lambda.py)
 <img width="1331" alt="Screen Shot 2023-02-24 at 4 26 58 PM" src="https://user-images.githubusercontent.com/90226898/221296329-ef8babca-67eb-4e6c-bfc9-d7ae585e6f31.png">
 
 ***8. Run Airflow***
@@ -109,6 +109,3 @@ Triggering pyspark – Tranforming CSV to parque
 ## Results and Visualization
 The COVID-19 pandemic has significantly impacted gas prices in major cities in Canada, with a substantial decline observed in the first half of 2020. The recovery of gas prices in the latter half of the year indicates a gradual return to normalcy. Comparing the gas price data with the Crude Oil WTI data highlights the significant relationship between the two variables, providing further insights into the impact of the pandemic on the oil and gas industry. The results also show that other factors, such as weather and geopolitical events, influenced gas prices.
 ![Screen Shot 2023-02-25 at 9 34 34 AM](https://user-images.githubusercontent.com/90226898/221362630-4571bedc-e0cf-46ce-b618-61c9c9f7d307.png)
-
-
-
